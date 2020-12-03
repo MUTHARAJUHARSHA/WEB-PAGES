@@ -1,0 +1,38 @@
+<!Doctype html>
+<head>
+<script type="text/javascript">
+function findDiff(){
+var dob1= document.getElementById("dob1").value;
+var dob2= document.getElementById("dob2").value;
+var date1 = new Date(dob1);
+var date2=new Date(dob2);
+
+var ONE_DAY = 1000 * 60 * 60 * 24
+var d1 = date1.getTime()
+var d2 = date2.getTime()
+var diff = Math.abs(d1 - d2)
+document.getElementById("days").value=Math.round(diff/ONE_DAY);
+}
+</script>
+
+</head>
+<body style="background-color:#EAEEEE;">
+
+
+<hr>
+<center><b><h1>DIFFERENCE BETWEEN DATES CALCULATOR</h1></b></center>
+<hr>
+<h2><center><b>INSTRUCTIONS</b></center></h2>
+<center><p> 1) ENTER DATE 1</p>
+<p> 2) ENTER DATE 2</p>
+<p> 3) RESULTS ARE DISPLAYED</p></center>
+<hr>
+
+<pre>
+Enter Date1(yyyy-mm-dd): <input type="text" name="dob1" id="dob1" /><br><br>
+Enter Date2(yyyy-mm-dd): <input type="text" name="dob2" id="dob2" /><br><br>
+Number of days: <input type="text" name="days" id="days" />
+<input type="submit" value="calculate" onclick="findDiff();">
+</pre>
+</body>
+</html>

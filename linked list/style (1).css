@@ -1,0 +1,21 @@
+.container-1{
+    background-color: orange;
+     border: 10px solid black;
+     width: 100%;
+     margin: 1 auto ;
+     text-align: center;
+}
+
+.flex-box-container-1{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.flex-box-container-1 div{
+    padding:50px;
+    align-items: center;
+}
+
+body{
+    background-color: grey;
+}
